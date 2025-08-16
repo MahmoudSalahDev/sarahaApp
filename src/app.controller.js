@@ -23,7 +23,7 @@ const bootstrap = (app, express) => {
 
     const limiter = rateLimit({
         windowMs: 60 * 1000,
-        max: 50,
+        max: 5,
         message:{
             error:"Too many requests, please try again later."
         }
