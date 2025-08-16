@@ -8,6 +8,7 @@ import morgan from "morgan"
 import { rateLimit } from 'express-rate-limit'
 import helmet from "helmet";
 
+
 const whitelist = [process.env.FRONT_ORIGIN, undefined]
 const corsOptions = {
     origin: function (origin, callback) {
